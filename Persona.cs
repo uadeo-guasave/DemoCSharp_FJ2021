@@ -14,4 +14,16 @@ class Persona
     {
         System.Console.WriteLine(nombre + " " + apellidos);
     }
+
+    public static void Main()
+    {
+      System.Console.WriteLine("Creando un objeto Persona");
+      // crear objeto
+      Persona alumno1 = new Persona();
+      // modificar atributos
+      alumno1.nombre = "Jesus";
+      alumno1.apellidos = "Avila";
+      // llamar métodos
+      alumno1.imprimirNombreCompleto();
+    }
 }
